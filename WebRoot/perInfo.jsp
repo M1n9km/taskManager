@@ -1,0 +1,42 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+<!DOCTYPE>
+<html>
+<head>
+<title>个人信息查询</title>
+</head>
+<body>
+<a href="${pageContext.request.contextPath}/servlet/ReturnToIndexServlet">返回</a><p>
+<table border=1>
+<caption>个人信息</caption>
+<tr>
+<td>账号：</td>
+<td>${user.id}</td>
+</tr>
+<tr>
+<td>姓名：</td>
+<td>${user.name}</td>
+</tr>
+<tr>
+<td>学院：</td>
+<td>${user.college}</td>
+</tr>
+<tr>
+<td>班级：</td>
+<td>${user.clas}</td>
+</tr>
+<tr>
+<td>专业：</td>
+<td>${user.major}</td>
+</tr>
+<tr>
+<td>邮箱：</td>
+<td>${user.mail}</td>
+</tr>
+<tr>
+<td>方向：</td>
+<td>${user.direction}</td>
+</tr>
+</table>
+</body>
+</html>
